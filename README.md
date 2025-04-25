@@ -93,14 +93,14 @@ using utility::string_t;
 using utility::conversions::to_string_t;
 
 const std::string APP_ID = "<YOUR_APP_ID>";
-const std::string APP_KEY_TOKEN = "<YOUR_APP_KEY_TOKEN>";
-const std::string USER_KEY_TOKEN = "<YOUR_USER_KEY_TOKEN>";
+const std::string REST_KEY_TOKEN = "<YOUR_REST_API_KEY>"; // App REST API key required for most endpoints
+const std::string ORG_KEY_TOKEN = "<YOUR_ORGANIZATION_API_KEY>"; // Organization key is only required for creating new apps and other top-level endpoints
 
 static DefaultApi * createApi() {
     // Settings up the client
     const auto configuration = ApiClient::getDefaultConfiguration();
-    configuration->setAppKeyToken(APP_KEY_TOKEN);
-    configuration->setUserKeyToken(USER_KEY_TOKEN);
+    configuration->setAppKeyToken(REST_KEY_TOKEN);
+    configuration->setUserKeyToken(ORG_KEY_TOKEN);
 
     const auto apiClient = std::make_shared<ApiClient>(configuration);
 
