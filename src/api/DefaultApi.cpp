@@ -115,7 +115,7 @@ pplx::task<std::shared_ptr<GenericSuccessBoolResponse>> DefaultApi::cancelNotifi
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("DELETE"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -276,7 +276,7 @@ pplx::task<std::shared_ptr<TemplateResource>> DefaultApi::copyTemplateToApp(util
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("POST"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -436,7 +436,7 @@ boost::replace_all(localVarPath, utility::conversions::to_string_t("{") + utilit
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("PATCH"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -595,7 +595,7 @@ boost::replace_all(localVarPath, utility::conversions::to_string_t("{") + utilit
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("PATCH"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -753,7 +753,7 @@ pplx::task<std::shared_ptr<CreateApiKeyResponse>> DefaultApi::createApiKey(utili
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("POST"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -910,7 +910,7 @@ pplx::task<std::shared_ptr<App>> DefaultApi::createApp(std::shared_ptr<App> app)
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("POST"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -1068,7 +1068,7 @@ pplx::task<std::shared_ptr<Object>> DefaultApi::createCustomEvents(utility::stri
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("POST"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -1225,7 +1225,7 @@ pplx::task<std::shared_ptr<CreateNotificationSuccessResponse>> DefaultApi::creat
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("POST"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -1377,7 +1377,7 @@ pplx::task<std::shared_ptr<CreateSegmentSuccessResponse>> DefaultApi::createSegm
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("POST"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -1537,7 +1537,7 @@ boost::replace_all(localVarPath, utility::conversions::to_string_t("{") + utilit
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("POST"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -1694,7 +1694,7 @@ pplx::task<std::shared_ptr<TemplateResource>> DefaultApi::createTemplate(std::sh
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("POST"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -1852,7 +1852,7 @@ pplx::task<std::shared_ptr<User>> DefaultApi::createUser(utility::string_t appId
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("POST"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -1990,7 +1990,7 @@ boost::replace_all(localVarPath, utility::conversions::to_string_t("{") + utilit
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("DELETE"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -2126,7 +2126,7 @@ boost::replace_all(localVarPath, utility::conversions::to_string_t("{") + utilit
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("DELETE"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -2262,7 +2262,7 @@ boost::replace_all(localVarPath, utility::conversions::to_string_t("{") + utilit
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("DELETE"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -2398,7 +2398,7 @@ boost::replace_all(localVarPath, utility::conversions::to_string_t("{") + utilit
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("DELETE"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -2518,7 +2518,7 @@ pplx::task<std::shared_ptr<GenericSuccessBoolResponse>> DefaultApi::deleteTempla
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("DELETE"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -2655,7 +2655,7 @@ boost::replace_all(localVarPath, utility::conversions::to_string_t("{") + utilit
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("DELETE"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -2775,7 +2775,7 @@ pplx::task<std::shared_ptr<ExportEventsSuccessResponse>> DefaultApi::exportEvent
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("POST"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -2927,7 +2927,7 @@ pplx::task<std::shared_ptr<ExportSubscriptionsSuccessResponse>> DefaultApi::expo
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("POST"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -3064,7 +3064,7 @@ boost::replace_all(localVarPath, utility::conversions::to_string_t("{") + utilit
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("GET"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -3200,7 +3200,7 @@ boost::replace_all(localVarPath, utility::conversions::to_string_t("{") + utilit
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("GET"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -3335,7 +3335,7 @@ pplx::task<std::shared_ptr<App>> DefaultApi::getApp(utility::string_t appId) con
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("GET"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -3469,7 +3469,7 @@ pplx::task<std::vector<std::shared_ptr<App>>> DefaultApi::getApps() const
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("GET"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -3611,7 +3611,7 @@ pplx::task<std::shared_ptr<NotificationWithMeta>> DefaultApi::getNotification(ut
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("GET"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -3769,7 +3769,7 @@ pplx::task<std::shared_ptr<NotificationHistorySuccessResponse>> DefaultApi::getN
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("POST"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -3918,7 +3918,7 @@ pplx::task<std::shared_ptr<NotificationSlice>> DefaultApi::getNotifications(util
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("GET"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -4072,7 +4072,7 @@ pplx::task<std::shared_ptr<OutcomesData>> DefaultApi::getOutcomes(utility::strin
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("GET"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -4215,7 +4215,7 @@ pplx::task<std::shared_ptr<GetSegmentsSuccessResponse>> DefaultApi::getSegments(
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("GET"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -4352,7 +4352,7 @@ boost::replace_all(localVarPath, utility::conversions::to_string_t("{") + utilit
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("GET"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -4488,7 +4488,7 @@ boost::replace_all(localVarPath, utility::conversions::to_string_t("{") + utilit
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("POST"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -4647,7 +4647,7 @@ boost::replace_all(localVarPath, utility::conversions::to_string_t("{") + utilit
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("POST"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -4806,7 +4806,7 @@ boost::replace_all(localVarPath, utility::conversions::to_string_t("{") + utilit
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("PATCH"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -4945,7 +4945,7 @@ boost::replace_all(localVarPath, utility::conversions::to_string_t("{") + utilit
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("POST"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -5104,7 +5104,7 @@ boost::replace_all(localVarPath, utility::conversions::to_string_t("{") + utilit
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("PATCH"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -5262,7 +5262,7 @@ pplx::task<std::shared_ptr<App>> DefaultApi::updateApp(utility::string_t appId, 
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("PUT"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -5421,7 +5421,7 @@ boost::replace_all(localVarPath, utility::conversions::to_string_t("{") + utilit
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("POST"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -5580,7 +5580,7 @@ boost::replace_all(localVarPath, utility::conversions::to_string_t("{") + utilit
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("PATCH"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -5722,7 +5722,7 @@ boost::replace_all(localVarPath, utility::conversions::to_string_t("{") + utilit
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("PATCH"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -5883,7 +5883,7 @@ pplx::task<std::shared_ptr<TemplateResource>> DefaultApi::updateTemplate(utility
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("PATCH"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -6043,7 +6043,7 @@ boost::replace_all(localVarPath, utility::conversions::to_string_t("{") + utilit
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("PATCH"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -6178,7 +6178,7 @@ pplx::task<std::shared_ptr<ApiKeyTokensListResponse>> DefaultApi::viewApiKeys(ut
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("GET"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -6316,7 +6316,7 @@ pplx::task<std::shared_ptr<TemplateResource>> DefaultApi::viewTemplate(utility::
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("GET"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)
@@ -6465,7 +6465,7 @@ pplx::task<std::shared_ptr<TemplatesListResponse>> DefaultApi::viewTemplates(uti
 
     // Adds a telemetry header
     localVarHeaderParams[utility::conversions::to_string_t("OS-Usage-Data")] =
-        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0-beta1");
+        utility::conversions::to_string_t("kind=sdk, sdk-name=onesignal-cpp, version=5.3.0");
 
     return m_ApiClient->callApi(localVarPath, utility::conversions::to_string_t("GET"), localVarQueryParams, localVarHttpBody, localVarHeaderParams, localVarFormParams, localVarFileParams, localVarRequestHttpContentType)
     .then([=](web::http::http_response localVarResponse)

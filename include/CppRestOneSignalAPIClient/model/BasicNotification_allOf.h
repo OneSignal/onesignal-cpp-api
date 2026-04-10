@@ -859,6 +859,15 @@ public:
     void setEmailFromAddress(const utility::string_t& value);
 
     /// <summary>
+    /// Channel: Email The email address where replies should be sent. If not specified, replies will go to the from address. 
+    /// </summary>
+    utility::string_t getEmailReplyToAddress() const;
+    bool emailReplyToAddressIsSet() const;
+    void unsetEmail_reply_to_address();
+
+    void setEmailReplyToAddress(const utility::string_t& value);
+
+    /// <summary>
     /// Channel: Email The preheader text of the email. Preheader is the preview text displayed immediately after an email subject that provides additional context about the email content. If not specified, will default to null. 
     /// </summary>
     utility::string_t getEmailPreheader() const;
@@ -920,6 +929,51 @@ public:
     void unsetCustom_data();
 
     void setCustomData(const std::shared_ptr<Object>& value);
+
+    /// <summary>
+    /// Channel: Push Notifications Platform: Huawei Full path of the app entry activity class
+    /// </summary>
+    utility::string_t getHuaweiBadgeClass() const;
+    bool huaweiBadgeClassIsSet() const;
+    void unsetHuawei_badge_class();
+
+    void setHuaweiBadgeClass(const utility::string_t& value);
+
+    /// <summary>
+    /// Channel: Push Notifications Platform: Huawei Accumulative badge number, which is an integer ranging from 1 to 99
+    /// </summary>
+    int32_t getHuaweiBadgeAddNum() const;
+    bool huaweiBadgeAddNumIsSet() const;
+    void unsetHuawei_badge_add_num();
+
+    void setHuaweiBadgeAddNum(int32_t value);
+
+    /// <summary>
+    /// Channel: Push Notifications Platform: Huawei Badge number, which is an integer ranging from 0 to 99
+    /// </summary>
+    int32_t getHuaweiBadgeSetNum() const;
+    bool huaweiBadgeSetNumIsSet() const;
+    void unsetHuawei_badge_set_num();
+
+    void setHuaweiBadgeSetNum(int32_t value);
+
+    /// <summary>
+    /// Channel: Push Notifications Platform: Huawei Category of the push notification for HMS classification.
+    /// </summary>
+    utility::string_t getHuaweiCategory() const;
+    bool huaweiCategoryIsSet() const;
+    void unsetHuawei_category();
+
+    void setHuaweiCategory(const utility::string_t& value);
+
+    /// <summary>
+    /// Channel: Push Notifications Platform: Huawei A tag used for Huawei business intelligence and analytics.
+    /// </summary>
+    utility::string_t getHuaweiBiTag() const;
+    bool huaweiBiTagIsSet() const;
+    void unsetHuawei_bi_tag();
+
+    void setHuaweiBiTag(const utility::string_t& value);
 
 
 protected:
@@ -1099,6 +1153,8 @@ protected:
     bool m_Email_from_nameIsSet;
     utility::string_t m_Email_from_address;
     bool m_Email_from_addressIsSet;
+    utility::string_t m_Email_reply_to_address;
+    bool m_Email_reply_to_addressIsSet;
     utility::string_t m_Email_preheader;
     bool m_Email_preheaderIsSet;
     bool m_Disable_email_click_tracking;
@@ -1113,6 +1169,16 @@ protected:
     bool m_FiltersIsSet;
     std::shared_ptr<Object> m_Custom_data;
     bool m_Custom_dataIsSet;
+    utility::string_t m_Huawei_badge_class;
+    bool m_Huawei_badge_classIsSet;
+    int32_t m_Huawei_badge_add_num;
+    bool m_Huawei_badge_add_numIsSet;
+    int32_t m_Huawei_badge_set_num;
+    bool m_Huawei_badge_set_numIsSet;
+    utility::string_t m_Huawei_category;
+    bool m_Huawei_categoryIsSet;
+    utility::string_t m_Huawei_bi_tag;
+    bool m_Huawei_bi_tagIsSet;
 };
 
 

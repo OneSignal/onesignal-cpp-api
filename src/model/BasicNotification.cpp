@@ -203,6 +203,8 @@ BasicNotification::BasicNotification()
     m_Email_from_nameIsSet = false;
     m_Email_from_address = utility::conversions::to_string_t("");
     m_Email_from_addressIsSet = false;
+    m_Email_reply_to_address = utility::conversions::to_string_t("");
+    m_Email_reply_to_addressIsSet = false;
     m_Email_preheader = utility::conversions::to_string_t("");
     m_Email_preheaderIsSet = false;
     m_Disable_email_click_tracking = false;
@@ -214,6 +216,16 @@ BasicNotification::BasicNotification()
     m_Sms_media_urlsIsSet = false;
     m_FiltersIsSet = false;
     m_Custom_dataIsSet = false;
+    m_Huawei_badge_class = utility::conversions::to_string_t("");
+    m_Huawei_badge_classIsSet = false;
+    m_Huawei_badge_add_num = 0;
+    m_Huawei_badge_add_numIsSet = false;
+    m_Huawei_badge_set_num = 0;
+    m_Huawei_badge_set_numIsSet = false;
+    m_Huawei_category = utility::conversions::to_string_t("");
+    m_Huawei_categoryIsSet = false;
+    m_Huawei_bi_tag = utility::conversions::to_string_t("");
+    m_Huawei_bi_tagIsSet = false;
 }
 
 BasicNotification::~BasicNotification()
@@ -634,6 +646,10 @@ web::json::value BasicNotification::toJson() const
     {
         val[utility::conversions::to_string_t(U("email_from_address"))] = ModelBase::toJson(m_Email_from_address);
     }
+    if(m_Email_reply_to_addressIsSet)
+    {
+        val[utility::conversions::to_string_t(U("email_reply_to_address"))] = ModelBase::toJson(m_Email_reply_to_address);
+    }
     if(m_Email_preheaderIsSet)
     {
         val[utility::conversions::to_string_t(U("email_preheader"))] = ModelBase::toJson(m_Email_preheader);
@@ -661,6 +677,26 @@ web::json::value BasicNotification::toJson() const
     if(m_Custom_dataIsSet)
     {
         val[utility::conversions::to_string_t(U("custom_data"))] = ModelBase::toJson(m_Custom_data);
+    }
+    if(m_Huawei_badge_classIsSet)
+    {
+        val[utility::conversions::to_string_t(U("huawei_badge_class"))] = ModelBase::toJson(m_Huawei_badge_class);
+    }
+    if(m_Huawei_badge_add_numIsSet)
+    {
+        val[utility::conversions::to_string_t(U("huawei_badge_add_num"))] = ModelBase::toJson(m_Huawei_badge_add_num);
+    }
+    if(m_Huawei_badge_set_numIsSet)
+    {
+        val[utility::conversions::to_string_t(U("huawei_badge_set_num"))] = ModelBase::toJson(m_Huawei_badge_set_num);
+    }
+    if(m_Huawei_categoryIsSet)
+    {
+        val[utility::conversions::to_string_t(U("huawei_category"))] = ModelBase::toJson(m_Huawei_category);
+    }
+    if(m_Huawei_bi_tagIsSet)
+    {
+        val[utility::conversions::to_string_t(U("huawei_bi_tag"))] = ModelBase::toJson(m_Huawei_bi_tag);
     }
 
     return val;
@@ -1680,6 +1716,16 @@ bool BasicNotification::fromJson(const web::json::value& val)
             setEmailFromAddress(refVal_setEmailFromAddress);
         }
     }
+    if(val.has_field(utility::conversions::to_string_t(U("email_reply_to_address"))))
+    {
+        const web::json::value& fieldValue = val.at(utility::conversions::to_string_t(U("email_reply_to_address")));
+        if(!fieldValue.is_null())
+        {
+            utility::string_t refVal_setEmailReplyToAddress;
+            ok &= ModelBase::fromJson(fieldValue, refVal_setEmailReplyToAddress);
+            setEmailReplyToAddress(refVal_setEmailReplyToAddress);
+        }
+    }
     if(val.has_field(utility::conversions::to_string_t(U("email_preheader"))))
     {
         const web::json::value& fieldValue = val.at(utility::conversions::to_string_t(U("email_preheader")));
@@ -1748,6 +1794,56 @@ bool BasicNotification::fromJson(const web::json::value& val)
             std::shared_ptr<Object> refVal_setCustomData;
             ok &= ModelBase::fromJson(fieldValue, refVal_setCustomData);
             setCustomData(refVal_setCustomData);
+        }
+    }
+    if(val.has_field(utility::conversions::to_string_t(U("huawei_badge_class"))))
+    {
+        const web::json::value& fieldValue = val.at(utility::conversions::to_string_t(U("huawei_badge_class")));
+        if(!fieldValue.is_null())
+        {
+            utility::string_t refVal_setHuaweiBadgeClass;
+            ok &= ModelBase::fromJson(fieldValue, refVal_setHuaweiBadgeClass);
+            setHuaweiBadgeClass(refVal_setHuaweiBadgeClass);
+        }
+    }
+    if(val.has_field(utility::conversions::to_string_t(U("huawei_badge_add_num"))))
+    {
+        const web::json::value& fieldValue = val.at(utility::conversions::to_string_t(U("huawei_badge_add_num")));
+        if(!fieldValue.is_null())
+        {
+            int32_t refVal_setHuaweiBadgeAddNum;
+            ok &= ModelBase::fromJson(fieldValue, refVal_setHuaweiBadgeAddNum);
+            setHuaweiBadgeAddNum(refVal_setHuaweiBadgeAddNum);
+        }
+    }
+    if(val.has_field(utility::conversions::to_string_t(U("huawei_badge_set_num"))))
+    {
+        const web::json::value& fieldValue = val.at(utility::conversions::to_string_t(U("huawei_badge_set_num")));
+        if(!fieldValue.is_null())
+        {
+            int32_t refVal_setHuaweiBadgeSetNum;
+            ok &= ModelBase::fromJson(fieldValue, refVal_setHuaweiBadgeSetNum);
+            setHuaweiBadgeSetNum(refVal_setHuaweiBadgeSetNum);
+        }
+    }
+    if(val.has_field(utility::conversions::to_string_t(U("huawei_category"))))
+    {
+        const web::json::value& fieldValue = val.at(utility::conversions::to_string_t(U("huawei_category")));
+        if(!fieldValue.is_null())
+        {
+            utility::string_t refVal_setHuaweiCategory;
+            ok &= ModelBase::fromJson(fieldValue, refVal_setHuaweiCategory);
+            setHuaweiCategory(refVal_setHuaweiCategory);
+        }
+    }
+    if(val.has_field(utility::conversions::to_string_t(U("huawei_bi_tag"))))
+    {
+        const web::json::value& fieldValue = val.at(utility::conversions::to_string_t(U("huawei_bi_tag")));
+        if(!fieldValue.is_null())
+        {
+            utility::string_t refVal_setHuaweiBiTag;
+            ok &= ModelBase::fromJson(fieldValue, refVal_setHuaweiBiTag);
+            setHuaweiBiTag(refVal_setHuaweiBiTag);
         }
     }
     return ok;
@@ -2164,6 +2260,10 @@ void BasicNotification::toMultipart(std::shared_ptr<MultipartFormData> multipart
     {
         multipart->add(ModelBase::toHttpContent(namePrefix + utility::conversions::to_string_t(U("email_from_address")), m_Email_from_address));
     }
+    if(m_Email_reply_to_addressIsSet)
+    {
+        multipart->add(ModelBase::toHttpContent(namePrefix + utility::conversions::to_string_t(U("email_reply_to_address")), m_Email_reply_to_address));
+    }
     if(m_Email_preheaderIsSet)
     {
         multipart->add(ModelBase::toHttpContent(namePrefix + utility::conversions::to_string_t(U("email_preheader")), m_Email_preheader));
@@ -2191,6 +2291,26 @@ void BasicNotification::toMultipart(std::shared_ptr<MultipartFormData> multipart
     if(m_Custom_dataIsSet)
     {
         multipart->add(ModelBase::toHttpContent(namePrefix + utility::conversions::to_string_t(U("custom_data")), m_Custom_data));
+    }
+    if(m_Huawei_badge_classIsSet)
+    {
+        multipart->add(ModelBase::toHttpContent(namePrefix + utility::conversions::to_string_t(U("huawei_badge_class")), m_Huawei_badge_class));
+    }
+    if(m_Huawei_badge_add_numIsSet)
+    {
+        multipart->add(ModelBase::toHttpContent(namePrefix + utility::conversions::to_string_t(U("huawei_badge_add_num")), m_Huawei_badge_add_num));
+    }
+    if(m_Huawei_badge_set_numIsSet)
+    {
+        multipart->add(ModelBase::toHttpContent(namePrefix + utility::conversions::to_string_t(U("huawei_badge_set_num")), m_Huawei_badge_set_num));
+    }
+    if(m_Huawei_categoryIsSet)
+    {
+        multipart->add(ModelBase::toHttpContent(namePrefix + utility::conversions::to_string_t(U("huawei_category")), m_Huawei_category));
+    }
+    if(m_Huawei_bi_tagIsSet)
+    {
+        multipart->add(ModelBase::toHttpContent(namePrefix + utility::conversions::to_string_t(U("huawei_bi_tag")), m_Huawei_bi_tag));
     }
 }
 
@@ -2809,6 +2929,12 @@ bool BasicNotification::fromMultiPart(std::shared_ptr<MultipartFormData> multipa
         ok &= ModelBase::fromHttpContent(multipart->getContent(utility::conversions::to_string_t(U("email_from_address"))), refVal_setEmailFromAddress );
         setEmailFromAddress(refVal_setEmailFromAddress);
     }
+    if(multipart->hasContent(utility::conversions::to_string_t(U("email_reply_to_address"))))
+    {
+        utility::string_t refVal_setEmailReplyToAddress;
+        ok &= ModelBase::fromHttpContent(multipart->getContent(utility::conversions::to_string_t(U("email_reply_to_address"))), refVal_setEmailReplyToAddress );
+        setEmailReplyToAddress(refVal_setEmailReplyToAddress);
+    }
     if(multipart->hasContent(utility::conversions::to_string_t(U("email_preheader"))))
     {
         utility::string_t refVal_setEmailPreheader;
@@ -2850,6 +2976,36 @@ bool BasicNotification::fromMultiPart(std::shared_ptr<MultipartFormData> multipa
         std::shared_ptr<Object> refVal_setCustomData;
         ok &= ModelBase::fromHttpContent(multipart->getContent(utility::conversions::to_string_t(U("custom_data"))), refVal_setCustomData );
         setCustomData(refVal_setCustomData);
+    }
+    if(multipart->hasContent(utility::conversions::to_string_t(U("huawei_badge_class"))))
+    {
+        utility::string_t refVal_setHuaweiBadgeClass;
+        ok &= ModelBase::fromHttpContent(multipart->getContent(utility::conversions::to_string_t(U("huawei_badge_class"))), refVal_setHuaweiBadgeClass );
+        setHuaweiBadgeClass(refVal_setHuaweiBadgeClass);
+    }
+    if(multipart->hasContent(utility::conversions::to_string_t(U("huawei_badge_add_num"))))
+    {
+        int32_t refVal_setHuaweiBadgeAddNum;
+        ok &= ModelBase::fromHttpContent(multipart->getContent(utility::conversions::to_string_t(U("huawei_badge_add_num"))), refVal_setHuaweiBadgeAddNum );
+        setHuaweiBadgeAddNum(refVal_setHuaweiBadgeAddNum);
+    }
+    if(multipart->hasContent(utility::conversions::to_string_t(U("huawei_badge_set_num"))))
+    {
+        int32_t refVal_setHuaweiBadgeSetNum;
+        ok &= ModelBase::fromHttpContent(multipart->getContent(utility::conversions::to_string_t(U("huawei_badge_set_num"))), refVal_setHuaweiBadgeSetNum );
+        setHuaweiBadgeSetNum(refVal_setHuaweiBadgeSetNum);
+    }
+    if(multipart->hasContent(utility::conversions::to_string_t(U("huawei_category"))))
+    {
+        utility::string_t refVal_setHuaweiCategory;
+        ok &= ModelBase::fromHttpContent(multipart->getContent(utility::conversions::to_string_t(U("huawei_category"))), refVal_setHuaweiCategory );
+        setHuaweiCategory(refVal_setHuaweiCategory);
+    }
+    if(multipart->hasContent(utility::conversions::to_string_t(U("huawei_bi_tag"))))
+    {
+        utility::string_t refVal_setHuaweiBiTag;
+        ok &= ModelBase::fromHttpContent(multipart->getContent(utility::conversions::to_string_t(U("huawei_bi_tag"))), refVal_setHuaweiBiTag );
+        setHuaweiBiTag(refVal_setHuaweiBiTag);
     }
     return ok;
 }
@@ -4874,6 +5030,26 @@ void BasicNotification::unsetEmail_from_address()
 {
     m_Email_from_addressIsSet = false;
 }
+utility::string_t BasicNotification::getEmailReplyToAddress() const
+{
+    return m_Email_reply_to_address;
+}
+
+void BasicNotification::setEmailReplyToAddress(const utility::string_t& value)
+{
+    m_Email_reply_to_address = value;
+    m_Email_reply_to_addressIsSet = true;
+}
+
+bool BasicNotification::emailReplyToAddressIsSet() const
+{
+    return m_Email_reply_to_addressIsSet;
+}
+
+void BasicNotification::unsetEmail_reply_to_address()
+{
+    m_Email_reply_to_addressIsSet = false;
+}
 utility::string_t BasicNotification::getEmailPreheader() const
 {
     return m_Email_preheader;
@@ -5013,6 +5189,106 @@ bool BasicNotification::customDataIsSet() const
 void BasicNotification::unsetCustom_data()
 {
     m_Custom_dataIsSet = false;
+}
+utility::string_t BasicNotification::getHuaweiBadgeClass() const
+{
+    return m_Huawei_badge_class;
+}
+
+void BasicNotification::setHuaweiBadgeClass(const utility::string_t& value)
+{
+    m_Huawei_badge_class = value;
+    m_Huawei_badge_classIsSet = true;
+}
+
+bool BasicNotification::huaweiBadgeClassIsSet() const
+{
+    return m_Huawei_badge_classIsSet;
+}
+
+void BasicNotification::unsetHuawei_badge_class()
+{
+    m_Huawei_badge_classIsSet = false;
+}
+int32_t BasicNotification::getHuaweiBadgeAddNum() const
+{
+    return m_Huawei_badge_add_num;
+}
+
+void BasicNotification::setHuaweiBadgeAddNum(int32_t value)
+{
+    m_Huawei_badge_add_num = value;
+    m_Huawei_badge_add_numIsSet = true;
+}
+
+bool BasicNotification::huaweiBadgeAddNumIsSet() const
+{
+    return m_Huawei_badge_add_numIsSet;
+}
+
+void BasicNotification::unsetHuawei_badge_add_num()
+{
+    m_Huawei_badge_add_numIsSet = false;
+}
+int32_t BasicNotification::getHuaweiBadgeSetNum() const
+{
+    return m_Huawei_badge_set_num;
+}
+
+void BasicNotification::setHuaweiBadgeSetNum(int32_t value)
+{
+    m_Huawei_badge_set_num = value;
+    m_Huawei_badge_set_numIsSet = true;
+}
+
+bool BasicNotification::huaweiBadgeSetNumIsSet() const
+{
+    return m_Huawei_badge_set_numIsSet;
+}
+
+void BasicNotification::unsetHuawei_badge_set_num()
+{
+    m_Huawei_badge_set_numIsSet = false;
+}
+utility::string_t BasicNotification::getHuaweiCategory() const
+{
+    return m_Huawei_category;
+}
+
+void BasicNotification::setHuaweiCategory(const utility::string_t& value)
+{
+    m_Huawei_category = value;
+    m_Huawei_categoryIsSet = true;
+}
+
+bool BasicNotification::huaweiCategoryIsSet() const
+{
+    return m_Huawei_categoryIsSet;
+}
+
+void BasicNotification::unsetHuawei_category()
+{
+    m_Huawei_categoryIsSet = false;
+}
+utility::string_t BasicNotification::getHuaweiBiTag() const
+{
+    return m_Huawei_bi_tag;
+}
+
+void BasicNotification::setHuaweiBiTag(const utility::string_t& value)
+{
+    m_Huawei_bi_tag = value;
+    m_Huawei_bi_tagIsSet = true;
+}
+
+bool BasicNotification::huaweiBiTagIsSet() const
+{
+    return m_Huawei_bi_tagIsSet;
+}
+
+void BasicNotification::unsetHuawei_bi_tag()
+{
+    m_Huawei_bi_tagIsSet = false;
 }
 }
 }
