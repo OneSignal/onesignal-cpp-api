@@ -1,4 +1,6 @@
-# C++ API client
+> [!WARNING]
+
+> **Deprecated August 26, 2026.** This C++ server SDK is archived and is no longer maintained or supported. C++ users should call the [OneSignal REST API](https://documentation.onesignal.com/reference) directly with [libcurl](https://curl.se/libcurl/) or migrate to the official [Go](https://github.com/OneSignal/onesignal-go-api) or [Rust](https://github.com/OneSignal/onesignal-rust-api) server SDK.# C++ API client
 
 A powerful way to send personalized messages at scale and build effective customer engagement strategies. Learn more at onesignal.com
 
@@ -495,4 +497,3 @@ api->getEligibleIams(APP_ID, "<SUBSCRIPTION_ID>").get();
 ## Author
 
 devrel@onesignal.com
-
